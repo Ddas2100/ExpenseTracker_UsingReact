@@ -1,14 +1,19 @@
+import './ExpenseItem.css'
+
 function ExpenseItem() {
     return (
-        <div>
-            <div>
-                <h4 className="inline">Food</h4><div className="inline">Rs. 10</div>
+        <div className="expense-item">
+            <div className="expense-item__description">
+                <h4>Food</h4>
+                <div className="expense-item__price">Rs. 10</div>
+            </div> 
+            <div className="expense-item__description"> 
+                <h4>Petrol</h4>
+                <div className="expense-item__price">Rs. 100</div>
             </div>
-            <div>
-                <h4 className="inline">Petrol</h4><div className="inline">Rs. 100</div>
-            </div>
-            <div>
-                <h4 className="inline">Movies</h4><div className="inline">Rs. 200</div>
+            <div className="expense-item__description">
+                <h4>Movies</h4>
+                <div className="expense-item__price">Rs. 200</div>
             </div>
         </div>
     )
