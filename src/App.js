@@ -1,6 +1,9 @@
-import ExpenseItem from './Components/ExpenseItem';
+import React from 'react';
+import ExpenseItem from './Components/Expenses/ExpenseItem';
+import Card from './Components/UI/Card';
 // import logo from './logo.svg';
-// import './App.css'; 
+import './App.css'; 
+// import Expenses from './Components/Expenses/Expenses';
 
 function App() {
   const expenses = [
@@ -34,10 +37,12 @@ function App() {
     }
   ]
   
-  const elements=[];
-  for(const[index, value] of expenses.entries()) {
-    elements.push(<li key={index}>{value}</li>)
-  }
+  // return (
+  //   <div>
+  //     <Expenses items= {expenses} />
+  //   </div>
+  // );
+  
   return (
     // <div className="App">
     //   <header className="App-header">
@@ -55,8 +60,7 @@ function App() {
     //     </a>
     //   </header>
     // </div>
-    <div>
-      <h2>Let's Get Started!</h2>
+    <Card className='expenses'>
       {expenses.map((expense) => (
         <ExpenseItem
           key={expense.id}
@@ -66,6 +70,7 @@ function App() {
           LocationOfExpenditure={expense.LocationOfExpenditure}
         />
       ))}
+
       {/* <ExpenseItem
         title={expenses[0].title}
         amount={expenses[0].amount}
@@ -74,11 +79,11 @@ function App() {
       </ExpenseItem>
       
       <ExpenseItem
-        title={expenses[1].title}
-        amount={expenses[1].amount}
-        date= {expenses[1].date}
-        LocationOfExpenditure= {expenses[1].LocationOfExpenditure}>
-      </ExpenseItem>
+      title={expenses[1].title}
+      amount={expenses[1].amount}
+      date= {expenses[1].date}
+      LocationOfExpenditure= {expenses[1].LocationOfExpenditure}>
+      </ExpenseItem> 
 
       <ExpenseItem
         title={expenses[2].title}
@@ -93,7 +98,7 @@ function App() {
         date= {expenses[3].date}
         LocationOfExpenditure= {expenses[3].LocationOfExpenditure}>
       </ExpenseItem> */}
-    </div>
+    </Card>
   );
 }
 
