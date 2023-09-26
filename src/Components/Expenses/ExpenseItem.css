@@ -26,7 +26,7 @@
     color: white;
 }
 
-.deleteButton{
+.changeButton{
     font-size: 0.8rem;
     font-weight: bold;
     color: white;
@@ -35,6 +35,16 @@
     padding: 0.5rem;
     border-radius: 12px;
     margin-left: auto;
+}
+
+.changeButton:hover{
+    cursor: pointer;
+    background-color: rgb(243, 100, 100);
+}
+
+.changeButton:active {
+    transform: translateY(2px); 
+    background-color: red; 
 }
 
 .expense-item__price {
