@@ -12,11 +12,11 @@ const ExpenseItem=(props) => {
         console.log(title);
     };
 
-    const [amount, setAmount] = useState(props.amount);
-    const clickHandler2 = () => {
-        setAmount('100');
-        console.log(amount);
-    };
+    // const [amount, setAmount] = useState(props.amount);
+    // const clickHandler2 = () => {
+    //     setAmount('100');
+    //     console.log(amount);
+    // };
     
     return (
         // <Card className= "expense-item">
@@ -29,11 +29,11 @@ const ExpenseItem=(props) => {
             <ExpenseDate date={props.date} />
             <div className='expense-item__description'>
                 <h3>{title}</h3>
-                <div className='expense-item__price'>${amount}</div>
+                <div className='expense-item__price'>${props.amount}</div>
                 {/* <h4>{props.LocationOfExpenditure}</h4> */}
             </div>
             <button className='changeButton' onClick={clickHandler}>Change Title</button>
-            <button className='changeButton' onClick={clickHandler2}>Change Amount</button>
+            {/* <button className='changeButton' onClick={clickHandler2}>Change Amount</button> */}
         </Card>
     ); 
 }

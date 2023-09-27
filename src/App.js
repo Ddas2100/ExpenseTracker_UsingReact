@@ -1,9 +1,10 @@
 import React from 'react';
-import ExpenseItem from './Components/Expenses/ExpenseItem';
-import Card from './Components/UI/Card';
+// import ExpenseItem from './Components/Expenses/ExpenseItem';
+// import Card from './Components/UI/Card';
 // import logo from './logo.svg';
 import './App.css'; 
-// import Expenses from './Components/Expenses/Expenses';
+import Expenses from './Components/Expenses/Expenses';
+import NewExpense from './Components/NewExpense/NewExpense';
 
 const App= () => {
   const expenses = [
@@ -37,69 +38,70 @@ const App= () => {
     }
   ]
   
-  // return (
-  //   <div>
-  //     <Expenses items= {expenses} />
-  //   </div>
-  // );
-  
   return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
-    <Card className='expenses'>
-      {expenses.map((expense) => (
-        <ExpenseItem
-          key={expense.id}
-          title={expense.title}
-          amount={expense.amount}
-          date={expense.date}
-          LocationOfExpenditure={expense.LocationOfExpenditure}
-        />
-      ))}
-
-      {/* <ExpenseItem
-        title={expenses[0].title}
-        amount={expenses[0].amount}
-        date= {expenses[0].date}
-        LocationOfExpenditure= {expenses[0].LocationOfExpenditure}>
-      </ExpenseItem>
-      
-      <ExpenseItem
-      title={expenses[1].title}
-      amount={expenses[1].amount}
-      date= {expenses[1].date}
-      LocationOfExpenditure= {expenses[1].LocationOfExpenditure}>
-      </ExpenseItem> 
-
-      <ExpenseItem
-        title={expenses[2].title}
-        amount={expenses[2].amount}
-        date= {expenses[2].date}
-        LocationOfExpenditure= {expenses[2].LocationOfExpenditure}>
-      </ExpenseItem>
-
-      <ExpenseItem
-        title={expenses[3].title}
-        amount={expenses[3].amount}
-        date= {expenses[3].date}
-        LocationOfExpenditure= {expenses[3].LocationOfExpenditure}>
-      </ExpenseItem> */}
-    </Card>
+    <div>
+      <NewExpense />
+      <Expenses items= {expenses} />
+    </div>
   );
+  
+  // return (
+  //   // <div className="App">
+  //   //   <header className="App-header">
+  //   //     <img src={logo} className="App-logo" alt="logo" />
+  //   //     <p>
+  //   //       Edit <code>src/App.js</code> and save to reload.
+  //   //     </p>
+  //   //     <a
+  //   //       className="App-link"
+  //   //       href="https://reactjs.org"
+  //   //       target="_blank"
+  //   //       rel="noopener noreferrer"
+  //   //     >
+  //   //       Learn React
+  //   //     </a>
+  //   //   </header>
+  //   // </div>
+  //   <Card className='expenses'>
+  //     {expenses.map((expense) => (
+  //       <ExpenseItem
+  //         key={expense.id}
+  //         title={expense.title}
+  //         amount={expense.amount}
+  //         date={expense.date}
+  //         LocationOfExpenditure={expense.LocationOfExpenditure}
+  //       />
+  //     ))}
+
+  //     <ExpenseItem
+  //       title={expenses[0].title}
+  //       amount={expenses[0].amount}
+  //       date= {expenses[0].date}
+  //       LocationOfExpenditure= {expenses[0].LocationOfExpenditure}>
+  //     </ExpenseItem>
+      
+  //     <ExpenseItem
+  //     title={expenses[1].title}
+  //     amount={expenses[1].amount}
+  //     date= {expenses[1].date}
+  //     LocationOfExpenditure= {expenses[1].LocationOfExpenditure}>
+  //     </ExpenseItem> 
+
+  //     <ExpenseItem
+  //       title={expenses[2].title}
+  //       amount={expenses[2].amount}
+  //       date= {expenses[2].date}
+  //       LocationOfExpenditure= {expenses[2].LocationOfExpenditure}>
+  //     </ExpenseItem>
+
+  //     <ExpenseItem
+  //       title={expenses[3].title}
+  //       amount={expenses[3].amount}
+  //       date= {expenses[3].date}
+  //       LocationOfExpenditure= {expenses[3].LocationOfExpenditure}>
+  //     </ExpenseItem>
+  //   </Card>
+  // );
 }
 
 export default App;
