@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 // import ExpenseItem from './Components/Expenses/ExpenseItem';
 // import Card from './Components/UI/Card';
 // import logo from './logo.svg';
@@ -7,7 +7,7 @@ import Expenses from './Components/Expenses/Expenses';
 import NewExpense from './Components/NewExpense/NewExpense';
 
 const App= () => {
-  const [expenses, setExpenses] = useState([
+  const expenses = [
     {
       id: 'e1',
       title: 'Tolilet Paper',
@@ -36,12 +36,11 @@ const App= () => {
       date: new Date(2023, 7, 18),
       LocationOfExpenditure: 'General Store'
     }
-  ])
+  ]
 
-  const addExpenseHandler = (expense) => {
-    // console.log('In App.js');
+  const addExpenseHandler = expense => {
+    console.log('In App.js');
     console.log(expense);
-    setExpenses((prevExpenses) => [expense, ...prevExpenses])
   };
   
   return (
