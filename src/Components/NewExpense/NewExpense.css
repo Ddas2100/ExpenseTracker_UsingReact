@@ -33,6 +33,6 @@
 }
 
 .new-expense button.alternative:hover
-.new-expense button.alternative:active {
+.new-expense button.alternative:active { 
     background-color: #ddb3f8;
 }

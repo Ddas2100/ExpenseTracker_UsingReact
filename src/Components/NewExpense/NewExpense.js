@@ -16,7 +16,7 @@ const NewExpense = (props) => {
         setIsEditing(false);
     };
 
-    const startEditingHandler = () => {
+    const startEditingHandler = () => { 
         setIsEditing(true);
     }
 

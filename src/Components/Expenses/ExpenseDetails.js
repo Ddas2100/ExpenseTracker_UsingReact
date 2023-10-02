@@ -8,7 +8,7 @@ const ExpenseDetails=(props) => {
             <div className="expense-item__price">${props.amount}</div>
             <div className="expense-item__description">{props.LocationOfExpenditure}</div>
         </div>
-    )
+    ) 
 }
 
 export default ExpenseDetails

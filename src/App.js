@@ -12,7 +12,7 @@ const DUMMY_EXPENSES = [
   },
   {
     id: 'e2',
-    title: 'New TV',
+    title: 'New TV', 
     amount: 799.49,
     date: new Date(2022, 5, 15),
   },
