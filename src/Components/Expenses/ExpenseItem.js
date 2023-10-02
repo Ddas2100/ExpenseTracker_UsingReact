@@ -34,7 +34,7 @@ const ExpenseItem=(props) => {
             </div>
             {/* <button className='changeButton' onClick={clickHandler}>Change Title</button> */}
             {/* <button className='changeButton' onClick={clickHandler2}>Change Amount</button> */}
-        </Card>
+        </Card> 
     ); 
 }
 

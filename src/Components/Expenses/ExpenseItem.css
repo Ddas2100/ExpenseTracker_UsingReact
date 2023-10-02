@@ -39,7 +39,7 @@
 
 .changeButton:hover{
     cursor: pointer;
-    background-color: rgb(243, 100, 100);
+    background-color: rgb(243, 100, 100); 
 }
 
 .changeButton:active {

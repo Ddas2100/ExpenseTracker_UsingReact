@@ -11,4 +11,4 @@ const ExpenseDetails=(props) => {
     ) 
 }
 
-export default ExpenseDetails
+export default ExpenseDetails 
